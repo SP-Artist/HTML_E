@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample HTML Page using all tags and elements">
+    <meta name="author" content="Your Name">
+    <title>Sample Webpage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <style>
+        /* Inline CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Sample Webpage</h1>
+        <p>This page is a demonstration of various HTML tags and elements.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is the home section. HTML stands for HyperText Markup Language, which is used to create web pages.</p>
+        <img src="image.jpg" alt="Sample Image" width="300" height="200"> <!-- Sample Image -->
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This section provides information about the webpage. Below is an example of a table:</p>
+        <table border="1">
+            <caption>Sample Table</caption>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>Engineer</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Designer</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>SEO Services</li>
+        </ul>
+        <ol>
+            <li>Requirement Gathering</li>
+            <li>Planning</li>
+            <li>Development</li>
+            <li>Testing</li>
+            <li>Deployment</li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Sample JavaScript
+        document.getElementById("name").addEventListener("focus", function() {
+            this.style.backgroundColor = "#e0f7fa";
+        });
+    </script>
+</body>
+</html>
