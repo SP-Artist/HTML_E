@@ -1,45 +1,76 @@
-var app = angular.module('portfolioApp', []);
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
 
-app.controller('MainController', function($scope) {
-    $scope.portfolio = {
-        name: "Your Full Name",
-        location: "Perungalathur, Chennai, Tamil Nadu, India",
-        objective: "A versatile and innovative professional with expertise in cloud computing, SQL development, content creation, digital marketing, and event management. I aim to leverage my diverse skill set to excel in both the digital and creative domains.",
-        experience: [
-            {
-                title: "GCP SQL Developer",
-                company: "Accenture, Chennai, India",
-                duration: "July 2023 – Present",
-                tasks: [
-                    "Designed and optimized complex SQL queries to enhance data retrieval processes.",
-                    "Worked closely with teams across different departments to manage and execute BigQuery projects.",
-                    "Implemented scalable cloud solutions that reduced operational costs.",
-                    "Provided guidance and technical support to junior developers."
-                ]
-            },
-            {
-                title: "Content Creator & Digital Marketing Specialist",
-                company: "Self-employed, Chennai, India",
-                duration: "July 2023 – Present",
-                tasks: [
-                    "Developed and executed a content strategy for Instagram, focusing on minimal art.",
-                    "Secured multiple brand partnerships and collaborations.",
-                    "Launched an online education platform specializing in art and drawing.",
-                    "Created and managed targeted digital marketing campaigns."
-                ]
-            },
-            // Add more experience as needed
-        ],
-        projects: [
-            {
-                title: "Online Art Course Development",
-                description: "Developed and launched an online art course, focusing on minimal artwork."
-            },
-            {
-                title: "Stock Market Investment",
-                description: "Conducted detailed research and investment in stocks related to gold manufacturing and supply."
-            },
-            // Add more projects as needed
-        ]
-    };
-});
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+nav ul li:hover {
+    color: #007bff;
+}
+
+main {
+    padding: 20px 0;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    display: none;
+}
+
+main section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
